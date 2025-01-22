@@ -1,0 +1,57 @@
+/* src/components/TaskList.css */
+
+/* Style for the task list */
+.task-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for each task item */
+.task-item {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between task text and button */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Padding for each task item */
+    border-bottom: 1px solid #ccc; /* Optional: border between tasks */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Change background color on hover */
+.task-item:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+/* Style for completed tasks */
+.completed {
+    text-decoration: line-through; /* Strike-through for completed tasks */
+    color: #888; /* Gray color for completed tasks */
+}
+
+/* Style for task text */
+.task-text {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    flex-grow: 1; /* Allow task text to take up remaining space */
+}
+
+/* Style for the checkbox */
+.task-checkbox {
+    margin-right: 10px; /* Space between checkbox and task text */
+}
+
+/* Style for the delete button */
+.delete-button {
+    background-color: #dc3545; /* Red background for delete button */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Change background color on hover for delete button */
+.delete-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
